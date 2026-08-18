@@ -1,0 +1,67 @@
+{
+  "name": "trendsapi",
+  "version": "1.0.1",
+  "description": "Official JavaScript/TypeScript client for the Trends API. Normalized 0-100 trend scores across Google, TikTok, Amazon, Reddit, YouTube, Steam, npm and 30+ sources. Zero runtime deps, dual ESM/CJS, edge-ready.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean --sourcemap",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "test:live": "node examples/quickstart.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "trends",
+    "trends-api",
+    "trendsapi",
+    "google-trends",
+    "google-trends-api",
+    "tiktok-trends",
+    "amazon-trends",
+    "reddit-trends",
+    "youtube-trends",
+    "keyword-research",
+    "seo",
+    "market-research",
+    "alternative-data",
+    "mcp",
+    "typescript"
+  ],
+  "author": "Trends API <hello@trendsapi.ai>",
+  "license": "MIT",
+  "homepage": "https://trendsapi.ai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trendsapi-ai/trendsapi-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trendsapi-ai/trendsapi-js/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}

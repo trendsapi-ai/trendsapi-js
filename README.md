@@ -5,7 +5,7 @@ Official JS/TS client for [Trends API](https://trendsapi.ai). Node 18+, Deno, Bu
 HTTP contract and field tables: [trendsapi-ai/trendsapi](https://github.com/trendsapi-ai/trendsapi).
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![npm](https://img.shields.io/badge/npm-trendsapi-red.svg)](https://www.npmjs.com/package/trendsapi)
+[![npm](https://img.shields.io/npm/v/trendsapi.svg)](https://www.npmjs.com/package/trendsapi)
 [![Runtime](https://img.shields.io/badge/runtime-fetch-lightgrey.svg)](https://trendsapi.ai)
 
 ## Authentication
